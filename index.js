@@ -133,3 +133,23 @@ bmiCalculator(158, 58);
 bmiCalculator(158, 60);
 bmiCalculator(158, 72);
 bmiCalculator(158, 80);
+
+//return example
+// interest calculator
+function interestCalculator(money, term, rate) {
+    return money * term * rate / 100;
+};
+
+// 조건 입력 테스트
+let myMoney = 1000000; // 맡긴 금액 (원)
+let saveTerm = 2; // 맡기는 기간 (년)
+let interestRate = 2.5; // 이자율 (%)
+
+// 수령액 계산 테스트
+let myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+let totalMoney = myMoney + myInterest;
+
+// 출력 테스트
+console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
+console.log('이자는 ' + myInterest + '원 입니다.');
+console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
