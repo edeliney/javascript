@@ -116,3 +116,20 @@ function whoamI(name, dob, nationality) {
 
 whoamI('Edeline', '18th of May 1996',
     'Korean');
+
+//bmi calculator
+function bmiCalculator(cm, kg) {
+    console.log('your bmi is ' + kg / (cm * cm / 10000));
+};
+//run bmi calculator
+// 저체중 : 18.5 미만
+// 정상체중 : 18.5 이상 23 미만
+// 과체중 : 23이상 25미만
+// 경도비만 : 25이상 30미만
+// 중도비만 : 30이상 35미만
+// 고도비만 : 35이상
+bmiCalculator(158, 45);
+bmiCalculator(158, 58);
+bmiCalculator(158, 60);
+bmiCalculator(158, 72);
+bmiCalculator(158, 80);
