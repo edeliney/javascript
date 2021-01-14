@@ -61,3 +61,19 @@ console.log('4절');
 console.log('이 기상과 이 맘으로 충성을 다하여');
 console.log('괴로우나 즐거우나 나라 사랑하세');
 chorus();
+
+// parameter
+function hello(name) {
+    console.log('Hello ' + name + '!');
+};
+hello(Edeline);
+hello(Kim);
+hello(Patty);
+
+function square(i) {
+    console.log(i + i);
+};
+
+square(2);
+square(3);
+square(4);
