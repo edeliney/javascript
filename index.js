@@ -66,9 +66,9 @@ chorus();
 function hello(name) {
     console.log('Hello ' + name + '!');
 };
-hello(Edeline);
-hello(Kim);
-hello(Patty);
+hello('Edeline');
+hello('Kim');
+hello('Patty');
 
 function square(i) {
     console.log(i + i);
@@ -90,7 +90,29 @@ function teraToMega(i) {
     console.log(i * 1024 * 1024 + "MB 입니다.");
 }
 
-// TB -> GB 테스트
+// TB->GB 
 teraToGiga(3);
-// TB -> MB 테스트
+// TB->MB
 teraToMega(3);
+
+//sum 2 parameters
+function sum(i, ii) {
+    console.log(i + ii);
+};
+sum(16, 7);
+sum(10, 20);
+sum(96, 3)
+
+//Who are you
+
+function whoamI(name, dob, nationality) {
+    console.log("What is your name?");
+    console.log("I am " + name);
+    console.log("What is your date of birth?");
+    console.log("It's " + dob);
+    console.log("Where are you come from");
+    console.log("I am " + nationality);
+};
+
+whoamI('Edeline', '18th of May 1996',
+    'Korean');
