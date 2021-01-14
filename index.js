@@ -77,3 +77,20 @@ function square(i) {
 square(2);
 square(3);
 square(4);
+
+
+// teraToGiga
+function teraToGiga(i) {
+    console.log(i + "TB는");
+    console.log(i * 1024 + "GB 입니다.");
+}
+//teraToMega
+function teraToMega(i) {
+    console.log(i + "TB는");
+    console.log(i * 1024 * 1024 + "MB 입니다.");
+}
+
+// TB -> GB 테스트
+teraToGiga(3);
+// TB -> MB 테스트
+teraToMega(3);
