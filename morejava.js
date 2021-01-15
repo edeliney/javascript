@@ -70,8 +70,8 @@ console.log(!!false);
 console.log(3 < 1 && 'Me' !== 'Me');
 console.log(23 !== 23 || 7 < 9);
 
-let i = 9
-console.log(i > 23 || !(i > 8));
+let p = 9
+console.log(p > 23 || !(p > 8));
 
 //console.log(i > 23 || !(i > 8));
 //console.log(9 > 23 || !(i > 8));
@@ -90,16 +90,68 @@ console.log(typeof `23`);
 console.log(typeof 'Hi');
 console.log(typeof false);
 
-let i = "Hi";
+let hi = "Hi";
 
 function sayHi() {
     console.log('Hi');
 };
 
-console.log(typeof i);
+console.log(typeof hi);
 console.log(typeof sayHi);
 
 console.log(typeof 'Hi' + '!'); //string!
 console.log(typeof 23 - 0); // Nan --> not a number
 console.log(typeof('Hi' + '!'));
 console.log(typeof(23 - 0));
+
+//precedence
+
+//type conversion
+
+//String, Number, Boolean
+console.log(Number('10') + Number('5'));
+console.log(String(10) + String(5));
+
+//number -> string
+let l = 23;
+console.log(l);
+console.log(String(l));
+console.log(typeof l);
+console.log(typeof String(l));
+
+//boolean -> string
+let ll = true;
+console.log(ll);
+console.log(String(ll));
+console.log(typeof ll);
+console.log(typeof String(ll));
+
+//string -> boolean
+let a = 'string';
+console.log(a);
+console.log(Boolean(a));
+console.log(typeof a);
+console.log(typeof Boolean(a));
+
+//number -> boolean
+let aa = 23;
+console.log(aa);
+console.log(Boolean(aa));
+console.log(typeof aa);
+console.log(typeof Boolean(aa));
+
+
+console.log(Boolean("false"));
+console.log(Boolean(6 % 2));
+console.log(Boolean(NaN) || Boolean('0'));
+console.log(Boolean(typeof false));
+// '',0,Nan = false
+
+// +. -, *, /, %, **
+console.log(23 + '0');
+console.log(23 + 0);
+console.log(23 - true);
+console.log(23 * false);
+console.log(23 / '1');
+console.log('23' ** true);
+console.log(23 & 'one');
