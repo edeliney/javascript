@@ -155,3 +155,31 @@ console.log(23 * false);
 console.log(23 / '1');
 console.log('23' ** true);
 console.log(23 & 'one');
+
+//template strings
+let year = 1996
+let month = 'Feb'
+let day = 1
+
+console.log("I was born on " + day + " of " + month + ", " + year);
+console.log(`I was born on ${day} of ${month}, ${year}`);
+
+let number = 23;
+
+function getTwice(xx) {
+    return xx * 2;
+}
+
+console.log(`${number} multiply 2 is ${getTwice(number)}.`)
+
+//example
+function calculateWage(name, wtime, wage) {
+    let total = wtime * wage;
+
+    console.log(`${name}'s total working hour is ${wtime}, total wages are ${total}.`); // 코드를 채워 넣으세요.
+}
+
+calculateWage('Amy', 228, 11350);
+calculateWage('Kim', 173, 12100);
+calculateWage('Lee', 165, 13090);
+calculateWage('David', 212, 10880);
