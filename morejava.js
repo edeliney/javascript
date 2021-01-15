@@ -183,3 +183,41 @@ calculateWage('Amy', 228, 11350);
 calculateWage('Kim', 173, 12100);
 calculateWage('Lee', 165, 13090);
 calculateWage('David', 212, 10880);
+
+//null and undefined
+let nullis;
+console.log(nullis); //undefined
+nullis = null;
+console.log(nullis); //null
+
+let glass;
+console.log(glass); // undefined
+glass = 'water';
+console.log(glass); //water
+glass = null;
+console.log(glass); // null
+//null = 의도적으로 없음
+//undefined = 처음부터 없음
+
+
+//example
+let material1 = 3;
+let material2 = '3';
+let material3 = 10;
+let material4 = '4';
+let material5 = 4;
+
+// result
+let result1;
+let result2;
+
+//result1 = string, '34'
+//result2 = number, 34
+result1 = material2 + material4;
+result2 = material1 * material3 + material5;
+
+// test code
+console.log(result1);
+console.log(typeof result1);
+console.log(result2);
+console.log(typeof result2);
