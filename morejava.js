@@ -80,3 +80,26 @@ console.log(i > 23 || !(i > 8));
 //console.log(false || !true);
 //console.log(false || false);
 // = false
+
+//typeof
+console.log(typeof 23);
+console.log(typeof 23.0);
+console.log(typeof '23');
+console.log(typeof "23");
+console.log(typeof `23`);
+console.log(typeof 'Hi');
+console.log(typeof false);
+
+let i = "Hi";
+
+function sayHi() {
+    console.log('Hi');
+};
+
+console.log(typeof i);
+console.log(typeof sayHi);
+
+console.log(typeof 'Hi' + '!'); //string!
+console.log(typeof 23 - 0); // Nan --> not a number
+console.log(typeof('Hi' + '!'));
+console.log(typeof(23 - 0));
